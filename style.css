@@ -7,6 +7,7 @@
 
 body {
   font-family: "Quicksand";
+  background-color: #ffecd1;
 }
 
 #signature {
@@ -14,4 +15,105 @@ body {
   position: fixed;
   bottom: 0px;
   left: 15px;
+}
+
+header {
+  text-align: center;
+}
+
+#title {
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+#subtitle {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+#container-recommendaation {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 60%;
+  background-color: #ff7b0033;
+  border: 2px solid #ff7d00;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}
+#p-media {
+  font-size: 20px;
+}
+#section-media {
+  font-size: 50px;
+  display: block;
+  justify-content: space-between;
+  max-width: 350px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+#section-last-story {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#p-last-story {
+  margin-bottom: 10px;
+}
+#input-last-story {
+  font-size: 14px;
+  background-color: #15616d10;
+  border: 1px solid #15616d;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #001524;
+}
+#section-genre {
+  margin: 10px 0px;
+}
+#genre {
+  background-color: #15616d10;
+  border: 1px solid #15616d;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#section-trope {
+  margin: 10px 0px;
+}
+#trope {
+  background-color: #15616d10;
+  border: 1px solid #15616d;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+#section-streaming {
+  margin: 10px 0px;
+}
+
+#generate {
+  background-color: #af5131;
+  border: 1px solid #78290f;
+  border-radius: 10px;
+  padding: 7px 10px;
+  color: #ffecd1;
+}
+#generate:hover {
+  background-color: #15616d;
+  border: 1px solid #001524;
+  color: #ffecd1;
+  transition: 230ms;
+}
+#retry {
+  background-color: #af5131;
+  border: 1px solid #78290f;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #ffecd1;
+}
+#retry:hover {
+  background-color: #15616d;
+  border: 1px solid #001524;
+  color: #ffecd1;
+  transition: 230ms;
 }
