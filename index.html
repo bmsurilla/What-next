@@ -5,8 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+US+Trad+Guides&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <h1 id="title">What next?</h1>
+      <p id="subtitle">Just finished a story? Find your next here:</p>
+    </header>
+    <main>
+      <div id="media-container">
+        <div id="show">📺</div>
+        <div id="movie">🎬</div>
+        <div id="book">📖</div>
+      </div>
+      <div>
+        <form id="last-story">
+          <p>What was the last story?</p>
+          <input type="text" placeholder="e.g., The Handmaid's Tale" />
+        </form>
+        <form id="options">
+          <label for="genre">What genre are you in the mood for?</label>
+          <select name="genre" id="genre">
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="sci-fi">Sci-fi</option>
+            <option value="fantasy">fantasy</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="thriller">Thriller</option>
+            <option value="Mystery">Mystery</option>
+          </select>
+        </form>
+        <form id="options">
+          <label for="trope"
+            >What trope are you in the mood for? (optional)</label
+          >
+          <select name="trope" id="trope">
+            <option value="enemies">Enemies to Lovers</option>
+            <option value="chosen">Chosen One</option>
+            <option value="found">Found Family</option>
+            <option value="second">Second Chance</option>
+            <option value="slow">Slow Burn</option>
+            <option value="time">Time Travel</option>
+            <option value="Dark">Dark Academia</option>
+            <option value="fake">Fake Relationship</option>
+            <option value="proximity">Forced Proximity</option>
+          </select>
+        </form>
+        <form id="streaming">
+          <input type="checkbox" name="stream1" value="Netflix" />
+          <label class="stream" for="Stream1">Netflix</label>
+          <input type="checkbox" name="stream2" value="Disney+" />
+          <label class="stream" for="Stream2">Disney+</label>
+          <input type="checkbox" name="stream3" value="Amazon Prime" />
+          <label class="stream" for="Stream3">Amazon Prime</label>
+          <input type="checkbox" name="stream4" value="Apple TV+" />
+          <label class="stream" for="Stream4">Apple TV+</label>
+        </form>
+        <button id="generate" type="submit">Get recomendations</button>
+        <button id="retry">🔄️</button>
+      </div>
+    </main>
     <footer>
       <p id="signature">
         This AI-Project was coded by
