@@ -74,7 +74,7 @@
             </select>
           </div>
 
-          <div id="section-streaming">
+          <!-- <div id="section-streaming">
             <input type="checkbox" name="stream1" value="Netflix" />
             <label class="stream" for="stream1">Netflix</label>
             <input type="checkbox" name="stream2" value="Disney+" />
@@ -83,15 +83,15 @@
             <label class="stream" for="stream3">Amazon Prime</label>
             <input type="checkbox" name="stream4" value="Apple TV+" />
             <label class="stream" for="stream4">Apple TV+</label>
-          </div>
+          </div> -->
 
           <input type="submit" value="generate reccomendations" id="generate" />
-          <input type="button" id="retry" value="🔄️" />
         </form>
       </div>
 
       <div id="container-recommendation">
         <h3>Up Next:</h3>
+        <div id="loader" class="hidden">⏳ Generating recommendations...</div>
         <div id="upNext"></div>
       </div>
     </main>

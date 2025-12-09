@@ -129,4 +129,15 @@ header {
   padding-bottom: 30px;
   padding-top: 0px;
   margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.hidden {
+  display: none;
+}
+
+#loader {
+  font-size: 40px;
+  margin-top: 20px;
+  text-align: center;
 }
