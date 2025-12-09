@@ -1,5 +1,18 @@
 function generateRecommendation(event) {
   event.preventDefault();
+
+  let mediaCheckboxes = Array.from(form.querySelectorAll("#section-media input[type="checkbox"]"));
+  let selectMedia = mediaCheckboxes.filter(checkbox => checkbox.checked).map(checkbox=> checkbox.value);
+  if (selectMedia.length ===0) {
+    alert ("Please select at least one media.");
+    return;
+  }
+
+
+  let streamingCheckboxes = Array.from(form.querySelectorAll("#section-streaming input[type="checkbox"]"));
+  let selectStream = streamingCheckboxes.filter(checkbox => checkbox.checked).map(checkbox=> checkbox.value);
+  
+  
   // let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   // let isChecked = Array.from(checkboxes).some((checkbox) => checkbox.checked);
   // if (!isChecked) {
