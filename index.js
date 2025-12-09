@@ -19,6 +19,21 @@ function generateRecommendation(event) {
     .filter((checkbox) => checkbox.checked)
     .map((checkbox) => checkbox.value);
 
+  let lastStoryInput = form.querySelector("#input-last-story");
+  let lastStory = lastStoryInput.value.trim();
+
+  let genre = form.querySelector("#genre").value;
+  let trope = form.querySelector("#trope").value;
+
+  let mediaString = selectMedia.join(",");
+  let streamString = selectStream.join(", ") || "(none)";
+
+  console.log(selectMedia);
+  console.log(selectStream);
+  console.log(lastStory);
+  console.log(genre);
+  console.log(trope);
+
   // let checkboxes = document.querySelectorAll('input[type="checkbox"]');
   // let isChecked = Array.from(checkboxes).some((checkbox) => checkbox.checked);
   // if (!isChecked) {
@@ -41,5 +56,5 @@ function generateRecommendation(event) {
   // //   axios.get(apiUrl).then(generateRecommendation);
 }
 
-let recommendation = document.querySelector("#recommendation-form");
-recommendation.addEventListener("submit", generateRecommendation);
+let form = document.querySelector("#recommendation-form");
+form.addEventListener("submit", generateRecommendation);
