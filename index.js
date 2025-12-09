@@ -1,7 +1,6 @@
 function displayRecommendation(response) {
-  alert("so far so good!");
-  // let recommendations = document.querySelector("#recommendations");
-  // recommendations.innerHTML("response.data.answer");
+  let upNext = document.querySelector("#upNext");
+  upNext.innerHTML = response.data.answer;
 }
 
 function generateRecommendation(event) {
