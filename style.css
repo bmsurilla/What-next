@@ -117,3 +117,15 @@ header {
   color: #ffecd1;
   transition: 230ms;
 }
+
+#container-recommendation {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 60%;
+  background-color: #ff7b0033;
+  border: 2px solid #ff7d00;
+  border-radius: 30px;
+  padding-bottom: 30px;
+  padding-top: 0px;
+}

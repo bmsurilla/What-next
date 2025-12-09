@@ -1,3 +1,9 @@
+function displayRecommendation(response) {
+  alert("so far so good!");
+  // let recommendations = document.querySelector("#recommendations");
+  // recommendations.innerHTML("response.data.answer");
+}
+
 function generateRecommendation(event) {
   event.preventDefault();
 
@@ -31,7 +37,7 @@ function generateRecommendation(event) {
   let usersInput = `the last thing I watched or read was: ${lastStory}. I am looking for something new in this meda: ${mediaString}.`;
 
   let apiKey = "bab44a6ef3at298bof0b63093865ccef";
-  let prompt = `You are an expert on movies, tv-shows and books. you know the most popular but also all hidden gems. Based on the ${usersInput} give a recommendations on what to watch or read next. Consider the options ${genre}, ${trope} and ${streamString} if it is not "none". .`;
+  let prompt = `You are an expert on movies, tv-shows and books. you know the most popular but also all hidden gems. Based on the ${usersInput} give a recommendations on what to watch or read next. Consider the options ${genre}, ${trope} and ${streamString} if it is not "none".`;
   let context = `give three recommendations based on the prompt. Make sure to not include R or M rated movies.  When you display your recommendation only add the following: Title, published year, author (if it's a book) or director (if it is a movie)`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
