@@ -36,12 +36,14 @@ function generateRecommendation(event) {
   let mediaString = selectMedia.join(", ");
   let streamString = selectStream.join(", ") || "(none)";
 
-  let usersInput = `the last thing I watched or read was: ${lastStory}. I am looking for something new in this meda: ${mediaString}.`;
+  let usersInput = `the last thing I watched or read was: ${lastStory}. I am looking for something new in this media: ${mediaString}.`;
 
   let apiKey = "bab44a6ef3at298bof0b63093865ccef";
   let prompt = `You are an expert on movies, tv-shows and books. you know the most popular but also all hidden gems. Based on the ${usersInput} give a recommendations on what to watch or read next. Consider the options ${genre}, ${trope} and ${streamString} if it is not "none".`;
   let context = `only give three recommendations based on the prompt. When you display your recommendation only display the following in onw line: Title, published year, author (if it's a book) or director (if it is a movie).  Use <br/><br/> to separate the titles. and add what kind of media it is. do not use *`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  document.querySelector("#upNext").innerHTML = "";
 
   axios.get(apiUrl).then(displayRecommendation);
 }
